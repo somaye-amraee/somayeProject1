@@ -1,0 +1,4 @@
+id_event, name_event, date_event, time_event, place_event, cost_event, total_capacity,flag_event
+1,event1,2012,12,teh,200,100,1
+2,event2,2015,14,esfahan,600,400,1
+3,event3,2018,16,mashad,900,500,1

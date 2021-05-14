@@ -1,116 +1,175 @@
-import csv
-class Person:
-    def __init__(self, ticket_Number):
-        self.ticket_Number = ticket_Number
-
-    def discount_status(self, user):
-        if self.user == "admin":
-            discount_status = "admin_discount"
-        elif self.user == "student":
-            discount_status = "student_discount"
-        elif self.user == "employee":
-            discount_status = "employee_discount"
-        else:
-            discount_status = "common_person_discount"
-
-    def __str__(self, ticket_Number):
-        return ""
-
-class Admin(Person):
-    def __init__(self, ticket_number):
-    super().__init__(self, ticket_Number)
-    self.ticket_number = ticket_number
-
-    def __str__(self):
-        ticket_price = ticket_price * ticket_Number
-
-        return f'ticket_price: {self.ticket_price}'
-
-class Student(Person):
-    def __init__(self, ticket_Number):
-    super().__init__(self, ticket_Number)
-    self.ticket_Number = ticket_Number
-
-class Employee(Person):
-    def __init__(self, ticket_Number):
-class Common_User(Person):
-    def __init__(self, ticket_Number):
-
-
-class Event:
-    def __init__(self, date, time, place, total_capacity, event_title, updated_capacity, bought_tickets = None,
-                 ticket_price):
-       """"""
-
-
-        self.date = date
-        self.time = time
-        self.place = place
-        self.total_capacity = total_capacity
-        self.bought_tickets = bought_tickets
-        self.ticket_price = ticket_price
-        self.event_title = event_title
-        self.updated_capacity = updated_capacity
-
-
-        """
-            this function prints the number of pages read and the number of pages remaining
-            And set progress for every object
-        """
-        try:
-            assert n + self.bought_tickets <= self.total_capacity
-            self.bought_tickets += n
-            remained_capacity = self.total_capacity - self.bought_tickets
-
-            self.updated_capacity = self.remained_capacity
-
-        except AssertionError:
-            print("You can not purchase tickets more than total_capacity.")
-
-        else:
-            if self.bought_tickets == self.total_capacity:
-                print("Completed")
-            else:
-                print(f"There is {self.remained_capacity} room from'{self.event_title}'.")
-
-
-@staticmethod
-def get_info():
-    """
-        this function get info from input for every book and initialize it
-        media contain info of book
-    """
-    title, author, publish_year, pages, language, price = \
-        input("*Enter* title| author| publish_year| pages| language| price: \n").split('|')
-    media = Book(title, author, publish_year, int(pages), language, price)
-    return media
-
-
-def __str__(self):
-    return f'\nTitle : {self.title} \nAuthor(s) : {self.author} \nPublish_year : {self.publish_year}' \
-           f'\nPages : {self.pages} \nLanguage : {self.language} \nPrice : {self.price} $'
-
-
-def __lt__(self, other):
-    return self.price < other.price
-
-
-class Cinema (Event):
-    def __init__(self, date, time, place, total_capacity, reminded_capacity,
-                 ticket_price, user, movie_genera):
-
-        super().__init__(date, time, place, total_capacity, reminded_capacity,
-                 ticket_price, user)
-        self.movie_genera = movie_genera
-
-
-
-
-class Theater(Cinema):
-    pass
-class Concert(Cinema):
-    pass
+# this library is for systemic work
+import sys
+# this is an interface
+import Admin
+from user import User
+import logging
+# #creat and configure logger
+logger = logging.getLogger()
 
 while True:
-    choice = input("enter your favorite event from Cinema, Theater and Concert")
-    pass
+    # user has 3 choice she/he can select one of them
+    print("please select one of follow choices:")
+    print("1-admin \n2-customer\n3-exit ")
+    try:
+        # user input one of them
+        user_input_selected = int(input("enter your choice: "))
+        # this if check that input was in range
+        if user_input_selected in range(1, 4):
+            # if this if True mean user is admin
+            if user_input_selected == 1:
+                obj_admin = Admin("admin")
+                while True:
+                    # this line check admin have an account or no
+                    print("do you have an account:\n1-yes\n2-no")
+
+                    try:
+                        # admin select one of this choice (has account or no)
+                        selected_admin = int(input("enter your choice: "))
+                        if selected_admin in range(1, 3):
+                            if selected_admin == 1:
+                                # create an object from admin class
+                                # invoke login method
+                                obj_admin.log_in()
+                                while True:
+                                    # select the item and invoke related method
+                                    print("please select one of follow choices:\n")
+                                    print("1-show all active event \n"
+                                          "2-show all event \n"
+                                          "3-show all deactivate event\n"
+                                          "4-create event \n"
+                                          "5-remove event \n"
+                                          "6-create discount\n"
+                                          "7-Exit ")
+                                    try:
+                                        admin_input_selected = int(input("select an item: "))
+                                        if admin_input_selected in range(1, 8):
+                                            if admin_input_selected == 1:
+                                                print(obj_admin.active_event())
+                                            elif admin_input_selected == 2:
+                                                print(obj_admin.show_event())
+                                            elif admin_input_selected == 3:
+                                                print(obj_admin.deactive_event())
+                                            elif admin_input_selected == 4:
+                                                obj_admin.add_event()
+                                            elif admin_input_selected == 5:
+                                                obj_admin.remove_event()
+                                            elif admin_input_selected == 6:
+                                                obj_admin.add_discount()
+                                            elif admin_input_selected == 7:
+                                                obj_admin.exit()
+                                        else:
+                                            print("your input is not valid please select other choice")
+                                    except ValueError:
+                                        print("your input is not valid please select other choice")
+                                        logger.error("ValueError: invalid input (your choice should be integer) ")
+                                        # if admin dont have an account should input a security code
+                            elif selected_admin == 2:
+                                security_code = input("please enter security code for create account: ")
+                                if security_code == "a123a123":
+                                    obj_admin.register()
+                                    obj_admin.log_in()
+                                    while True:
+                                        print("please select one of follow choices:\n")
+                                        print("1-show all active event \n"
+                                              "2-show all event \n"
+                                              "3-show all deactivate event\n"
+                                              "4-create event \n"
+                                              "5-remove event \n"
+                                              "6-create discount\n"
+                                              "7-Exit ")
+                                        try:
+                                            admin_input_selected = int(input("select an item: "))
+                                            if admin_input_selected in range(1, 7):
+                                                if admin_input_selected == 1:
+                                                    print(obj_admin.active_event())
+                                                elif admin_input_selected == 2:
+                                                    print(obj_admin.show_event())
+                                                elif admin_input_selected == 3:
+                                                    print(obj_admin.deactive_event())
+                                                elif admin_input_selected == 4:
+                                                    obj_admin.add_event()
+                                                elif admin_input_selected == 5:
+                                                    obj_admin.remove_event()
+                                                elif admin_input_selected == 6:
+                                                    obj_admin.add_discount()
+                                                elif admin_input_selected == 7:
+                                                    obj_admin.exit()
+                                            else:
+                                                print("your input is not valid please select other choice")
+                                        except ValueError:
+                                            print("your input is not valid please select other choice")
+                                            logger.error("ValueError:invalid input (maybe you wrote string character)")
+                                else:
+                                    print("security code is wrong!")
+                                    # log warning
+                                    logger.warning("security code is wrong!")
+
+                                    sys.exit()
+                            else:
+                                print("your input is not valid please select other choice")
+                                # log warning
+                                logger.warning("your choices should be between 1 to 3")
+                    except ValueError:
+                        print("your input is not valid please select other choice")
+                        # log error
+                        logger.error("ValueError: invalid input")
+
+            elif user_input_selected == 2:
+                # if customer select create an object of this
+                obj_customer = User("user")
+                while True:
+                    print(obj_customer.show_event())
+                    print("do you want sale an event:\n1-yes\n2-no")
+                    try:
+                        selected_user = int(input("enter your choice: "))
+                        if selected_user in range(1, 3):
+                            if selected_user == 1:
+                                print("do you have an account:\n1-yes\n2-no")
+                                try:
+                                    selected_user2 = int(input("enter your choice: "))
+                                    if selected_user2 in range(1, 3):
+                                        if selected_user2 == 1:
+                                            obj_customer.log_in()
+                                            print(obj_customer.active_event())
+                                            input_user = int(input("your selection : "))
+                                            obj_customer.show_details_event(input_user)
+                                            obj_customer.choose_event(input_user)
+                                            obj_customer.buy_ticket(input_user)
+                                            break
+                                        elif selected_user2 == 2:
+                                            obj_customer.create_account()
+                                            obj_customer.log_in()
+                                            print(obj_customer.active_event())
+                                            input_user = int(input("your selection : "))
+                                            obj_customer.show_details_event(input_user)
+                                            obj_customer.choose_event(input_user)
+                                            obj_customer.buy_ticket(input_user)
+                                            break
+                                        else:
+                                            print("your input is not valid please select other choice")
+                                except ValueError:
+                                    print("your input is not valid please select other choice")
+                                    logger.error("ValueError: invalid input")
+                            elif selected_user == 2:
+                                print("thank you for see events\nbye")
+                                input("enter any key to exit..... ")
+                                sys.exit()
+                            else:
+                                print("your input is not valid please select other choice")
+                                # log warning
+                                logger.warning("")
+                    except ValueError:
+                        print("your input is not valid please select other choice")
+                        # log error
+                        logger.error("ValueError:invalid input")
+            elif user_input_selected == 3:
+                print("thank you for see events\nbye")
+                input("enter any key to exit..... ")
+                sys.exit()
+            break
+        else:
+            print("your input is not valid please select other choice")
+    except ValueError:
+        print("your input is not valid please select other choice")
+        logger.error("ValueError:invalid input")
