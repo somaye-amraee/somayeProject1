@@ -1,0 +1,4 @@
+role,discount_code,discount_percent
+student,111,25
+employee,222,30
+admin,333,50
