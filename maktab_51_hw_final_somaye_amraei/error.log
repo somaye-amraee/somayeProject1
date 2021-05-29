@@ -1,0 +1,247 @@
+2021-05-25 13:54:35,066 - error log - ERROR - file not found
+Traceback (most recent call last):
+  File "D:/maktab films/my task/user.py", line 118, in sign_up
+    df_account = pd.read_csv(path_file)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 610, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 462, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 819, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1050, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1867, in __init__
+    self._open_handles(src, kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1362, in _open_handles
+    self.handles = get_handle(
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\common.py", line 642, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'accounts1.csv'
+2021-05-25 16:58:42,231 - error log - ERROR - file not found
+Traceback (most recent call last):
+  File "D:\maktab films\my task\user.py", line 118, in sign_up
+    df_account = pd.read_csv(path_file)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 610, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 462, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 819, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1050, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1867, in __init__
+    self._open_handles(src, kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1362, in _open_handles
+    self.handles = get_handle(
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\common.py", line 642, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'accounts1.csv'
+2021-05-25 17:04:33,128 - error log - ERROR - file not found
+Traceback (most recent call last):
+  File "D:\maktab films\my task\user.py", line 118, in sign_up
+    df_account = pd.read_csv(path_file)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 610, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 462, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 819, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1050, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1867, in __init__
+    self._open_handles(src, kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1362, in _open_handles
+    self.handles = get_handle(
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\common.py", line 642, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'accounts1.csv'
+2021-05-25 18:35:51,513 - error log - ERROR - file not found
+Traceback (most recent call last):
+  File "D:\maktab films\my task\user.py", line 118, in sign_up
+    df_account = pd.read_csv(path_file)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 610, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 462, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 819, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1050, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1867, in __init__
+    self._open_handles(src, kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1362, in _open_handles
+    self.handles = get_handle(
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\common.py", line 642, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'accounts1.csv'
+2021-05-26 13:11:43,344 - error log - ERROR - file not found
+Traceback (most recent call last):
+  File "D:\maktab films\my task\user.py", line 118, in sign_up
+    df_account = pd.read_csv(path_file)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 610, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 462, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 819, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1050, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1867, in __init__
+    self._open_handles(src, kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1362, in _open_handles
+    self.handles = get_handle(
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\common.py", line 642, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'accounts1.csv'
+2021-05-27 19:02:44,288 - error log - ERROR - file not found
+Traceback (most recent call last):
+  File "D:\maktab films\my task\user.py", line 118, in sign_up
+    df_account = pd.read_csv(path_file)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 610, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 462, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 819, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1050, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1867, in __init__
+    self._open_handles(src, kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1362, in _open_handles
+    self.handles = get_handle(
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\common.py", line 642, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'accounts1.csv'
+2021-05-27 19:05:44,645 - error log - ERROR - file not found
+Traceback (most recent call last):
+  File "D:\maktab films\my task\user.py", line 118, in sign_up
+    df_account = pd.read_csv(path_file)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 610, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 462, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 819, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1050, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1867, in __init__
+    self._open_handles(src, kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1362, in _open_handles
+    self.handles = get_handle(
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\common.py", line 642, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'accounts1.csv'
+2021-05-27 19:10:33,008 - error log - ERROR - file not found
+Traceback (most recent call last):
+  File "D:\maktab films\my task\user.py", line 118, in sign_up
+    df_account = pd.read_csv(path_file)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 610, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 462, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 819, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1050, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1867, in __init__
+    self._open_handles(src, kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1362, in _open_handles
+    self.handles = get_handle(
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\common.py", line 642, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'accounts1.csv'
+2021-05-27 22:15:15,736 - error log - ERROR - file not found
+Traceback (most recent call last):
+  File "D:\maktab films\my task\user.py", line 119, in sign_up
+    df_account = pd.read_csv(path_file)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 610, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 462, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 819, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1050, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1867, in __init__
+    self._open_handles(src, kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1362, in _open_handles
+    self.handles = get_handle(
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\common.py", line 642, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'accounts1.csv'
+2021-05-27 22:15:32,837 - error log - ERROR - file not found
+Traceback (most recent call last):
+  File "D:\maktab films\my task\user.py", line 119, in sign_up
+    df_account = pd.read_csv(path_file)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 610, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 462, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 819, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1050, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1867, in __init__
+    self._open_handles(src, kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1362, in _open_handles
+    self.handles = get_handle(
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\common.py", line 642, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'accounts1.csv'
+2021-05-27 22:59:00,225 - error log - ERROR - file not found
+Traceback (most recent call last):
+  File "D:\maktab films\my task\user.py", line 119, in sign_up
+    df_account = pd.read_csv(path_file)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 610, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 462, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 819, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1050, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1867, in __init__
+    self._open_handles(src, kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1362, in _open_handles
+    self.handles = get_handle(
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\common.py", line 642, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'accounts1.csv'
+2021-05-27 23:00:33,659 - error log - ERROR - file not found
+Traceback (most recent call last):
+  File "D:\maktab films\my task\user.py", line 119, in sign_up
+    df_account = pd.read_csv(path_file)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 610, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 462, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 819, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1050, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1867, in __init__
+    self._open_handles(src, kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1362, in _open_handles
+    self.handles = get_handle(
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\common.py", line 642, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'accounts1.csv'
+2021-05-27 23:02:30,968 - error log - ERROR - file not found
+Traceback (most recent call last):
+  File "D:\maktab films\my task\user.py", line 119, in sign_up
+    df_account = pd.read_csv(path_file)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 610, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 462, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 819, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1050, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1867, in __init__
+    self._open_handles(src, kwds)
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\parsers.py", line 1362, in _open_handles
+    self.handles = get_handle(
+  File "D:\maktab films\my task\venv\lib\site-packages\pandas\io\common.py", line 642, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'accounts1.csv'
